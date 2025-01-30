@@ -82,3 +82,11 @@ let Product2 = {
 console.log(Product2.color);
 
 console.log(JSON.stringify(Product2));
+
+//while loop
+
+let i = 1;
+while (i <= 5) {
+  console.log("Hello");
+  i++;
+}
