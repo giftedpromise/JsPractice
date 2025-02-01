@@ -90,3 +90,16 @@ while (i <= 5) {
   console.log("Hello");
   i++;
 }
+
+//Do -while loop
+
+let counted = 1;
+
+do {
+  console.log("Hello");
+  counted++;
+} while (counted <= 3);
+
+for (let index = 0; index < 7; index++) {
+  console.log("hello");
+}
