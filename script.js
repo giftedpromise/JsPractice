@@ -103,3 +103,48 @@ do {
 for (let index = 0; index < 7; index++) {
   console.log("hello");
 }
+
+//functions
+
+function add(a, b) {
+  console.log(a + b);
+}
+
+add(4, 6);
+
+//Arrays
+
+let fruits = ["Mango", "orange", "Banana"];
+console.log(fruits);
+console.log(fruits[2]);
+
+for (let index = 0; index < fruits.length; index++) {
+  const element = fruits[index];
+  console.log(element);
+}
+
+//Spread Operator
+let num = [1, 2, 3, 4, 6];
+let max = Math.max(...num);
+console.log(max);
+
+let min = Math.min(...num);
+console.log(min);
+
+let newArray = [...num, ...fruits];
+console.log(newArray);
+console.log(typeof newArray);
+
+//Rest Operator
+
+function openFridge(...foods) {
+  console.log(foods);
+  console.log(typeof foods);
+}
+
+let food1 = "Rice";
+let food2 = "beans";
+let food3 = "yam";
+let food4 = "Bread";
+
+openFridge(food1, food2, food3, food4);
