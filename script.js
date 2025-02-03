@@ -111,3 +111,14 @@ function add(a, b) {
 }
 
 add(4, 6);
+
+//Arrays
+
+let fruits = ["Mango", "orange", "Banana"];
+console.log(fruits);
+console.log(fruits[2]);
+
+for (let index = 0; index < fruits.length; index++) {
+  const element = fruits[index];
+  console.log(element);
+}
