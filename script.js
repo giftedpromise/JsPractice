@@ -178,5 +178,30 @@ function double(element, index, array) {
 
 console.log(numbers);
 
+//map()
 let doubledWithMap = numbers.map((num) => num * 2);
 console.log(doubledWithMap);
+
+let users = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 30 },
+  { name: "Charlie", age: 22 },
+];
+
+let userNames = users.map((user) => user.name);
+
+console.log(userNames);
+
+let userAge = users.map((user) => user.age);
+console.log(userAge);
+
+let prices = [100, 200, 300];
+
+let withTax = prices.map((price) => {
+  return {
+    original: price,
+    withTax: price * 1.2,
+  };
+});
+
+console.log(withTax);
