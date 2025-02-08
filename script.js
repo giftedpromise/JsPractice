@@ -205,3 +205,11 @@ let withTax = prices.map((price) => {
 });
 
 console.log(withTax);
+
+//filter
+let evenNumbers = numbers.filter((num) => num % 2 === 0);
+
+console.log(evenNumbers); // [2, 4, 6]
+
+let olderUser = users.filter((user) => user.age > 25);
+console.log(olderUser);
