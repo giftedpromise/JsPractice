@@ -213,3 +213,18 @@ console.log(evenNumbers); // [2, 4, 6]
 
 let olderUser = users.filter((user) => user.age > 25);
 console.log(olderUser);
+
+const words = [
+  "apple",
+  "mango",
+  "orange",
+  "kiwi",
+  "pomegranate",
+  "pawpaw",
+  "coconut",
+];
+const shortWords = words.filter(getShortWords);
+console.log(shortWords);
+function getShortWords(element) {
+  return element.length <= 6;
+}
