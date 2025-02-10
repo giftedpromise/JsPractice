@@ -148,3 +148,35 @@ let food3 = "yam";
 let food4 = "Bread";
 
 openFridge(food1, food2, food3, food4);
+
+//callBacks
+
+function greet(name, callBack) {
+  console.log(`Hello, ${name}`);
+  callBack();
+}
+
+function sayGoodBye() {
+  console.log("Good Bye!");
+}
+
+greet("Alice", sayGoodBye);
+
+//forEach
+
+let numbers = [1, 2, 3, 4, 5, 6];
+
+numbers.forEach(double);
+function display(element) {
+  console.log(element);
+}
+numbers.forEach(display);
+
+function double(element, index, array) {
+  array[index] = element * 2;
+}
+
+console.log(numbers);
+
+let doubledWithMap = numbers.map((num) => num * 2);
+console.log(doubledWithMap);
