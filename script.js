@@ -228,3 +228,35 @@ console.log(shortWords);
 function getShortWords(element) {
   return element.length <= 6;
 }
+
+//Constructor
+
+function person(name, age, school) {
+  this.name = name;
+  this.age = age;
+  this.school = school;
+}
+
+let person1 = new person("Promise", 13, "Unilag");
+
+console.log(
+  `my name is ${person1.name}, I am ${person1.age} old, I attend ${person1.school}`
+);
+
+//Class
+class user {
+  constructor(name, age, school) {
+    this.name = name;
+    this.age = age;
+    this.school = school;
+  }
+
+  showUser() {
+    console.log(
+      `my name is ${this.name}, I am ${this.age} old, I attend ${this.school}`
+    );
+  }
+}
+
+const myPerson = new user("Ike", 32, "UDUS");
+myPerson.showUser();
